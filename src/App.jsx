@@ -1,17 +1,21 @@
-
-import { Button } from './components/ui/button'
+import ComponentsExport from "./components/ComponentsExport";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
+import { Routes, Route } from "react-router-dom";
 function App() {
- 
-
   return (
     <>
-    <div className="container max-w-screen-xl mx-auto lg:py-4">
-    <Button>Click me</Button>
-      <h1 className="font-bold text-3xl">hello</h1>
-    </div>
-      
+      {/* <Routes>
+        <Route path="/" element={ <Home/> } />
+        <Route path="about" element={ <About/> } />
+        <Route path="contact" element={ <Contact/> } />
+      </Routes> */}
+    
+      <Header />
+      <ComponentsExport />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

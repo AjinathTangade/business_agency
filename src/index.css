@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+*{
+  font-family: "Ubuntu", sans-serif;
+}
   @layer base {
     :root {
       --background: 0 0% 100%;
@@ -64,6 +66,22 @@
       --input: 217.2 32.6% 17.5%;
       --ring: 212.7 26.8% 83.9%;
     }
+  }
+  .gradient-text {
+    background-image: linear-gradient(to right, #20d9a1, #3100ff, #5f39ff, #5f39ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text-menu {
+    background-image: linear-gradient(to right, #20d9a1, #5f39ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-menu-active {
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   @layer base {
