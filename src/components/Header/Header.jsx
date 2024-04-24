@@ -15,7 +15,7 @@ import {
 function Header() {
   return (
     <div className="bg-black">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center py-3 px-5 lg:px-0 lg:py-3">
+      <div className="max-w-screen-xl mx-auto flex justify-between items-center py-3 px-5 xl:px-5 lg:py-3">
         <div className="">
           <img
             src="/primary-logo.png"

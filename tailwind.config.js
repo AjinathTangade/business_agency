@@ -66,12 +66,37 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+       
+        shakeY: {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "translateY(-10px)",
+          },
+          "20%, 40%, 60%, 80%": {
+            transform: "translateY(10px)",
+          },
+        },
+        shakeTwo: {
+          "0%, 100%": {
+            transform: "translateY(0)",
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "translateY(-10px)",
+          },
+          "20%, 40%, 60%, 80%": {
+            transform: "translateY(10px)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        shakeTwo: "shakeTwo 18s ease-in-out infinite",
+        shakeY: "shakeY 20s ease-in-out infinite",
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
