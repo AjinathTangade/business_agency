@@ -89,12 +89,33 @@ module.exports = {
             transform: "translateY(10px)",
           },
         },
+        pulse: { 
+          "20%, 40%, 60%, 80%": {
+            opacity:1,
+            transform: "scale(0.9)"
+          },
+          "10%, 30%, 50%, 70%, 90%": {
+            transform: "scale(0.8)",
+          },
+        },
+        animName: {
+          "0%":{
+             transform: "rotate(0deg)",
+            },
+         "100%":{
+             transform: "rotate(360deg)",
+            }
+         }
+        
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         shakeTwo: "shakeTwo 18s ease-in-out infinite",
         shakeY: "shakeY 20s ease-in-out infinite",
+        pulse: "pulse 22s ease-in-out infinite",
+        animName: "animName 6s linear infinite",
+        
       },
     },
   },
