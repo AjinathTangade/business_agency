@@ -5,8 +5,8 @@ function About() {
   return (
     <div>
       <div className="bg-cover bg-center bg-[url('/aboutus.png')] min-h-fit py-16 ">
-        <div className="max-w-screen-xl mx-auto py-3 px-5 xl:px-5 lg:py-3">
-          <div className="grid grid-cols-1 lg:grid-cols-2 xl:pt-10">
+        <div className="max-w-screen-xl mx-auto py-3 px-5 xl:px-0 lg:py-3">
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:pt-10">
             <div className="grid grid-cols-2 grid-rows-2 ">
               <div className="flex justify-start items-start relative">
                 <img
